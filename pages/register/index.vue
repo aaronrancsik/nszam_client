@@ -14,21 +14,21 @@
   export default {
     data(){
       return{
-        valt:0
+        valt: 0
       }
     },
     fetch(){
 
     },
-    async asyncData(){
-    }
-    ,
+    async asyncData({store}){
+     list: store.state.counter.toString()
+    },
     methods:{
       inc(){
         this.$store.commit('increment')
       },
       inc2(){
-        this.valt++
+         this.valt++
       }
 
     },

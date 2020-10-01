@@ -13,5 +13,8 @@
     "core-js": "^3.6.5",
     "nuxt": "^2.14.5"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@nuxt/types": "^2.14.6",
+    "@nuxtjs/vuetify": "^1.11.2"
+  }
 }
