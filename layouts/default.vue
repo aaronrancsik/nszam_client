@@ -4,11 +4,15 @@
       <v-container >
         <v-app-bar app dense>
           <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
+          <v-spacer></v-spacer>
           <v-toolbar-title>
             <v-btn to="/">Imagehub</v-btn>
           </v-toolbar-title>
+          <v-spacer></v-spacer>
           <div v-if="$auth.loggedIn" class="profileButton">
-            <v-btn to="/profile">Profile</v-btn>
+            <v-btn icon to="/profile">
+              <v-icon>mdi-account</v-icon>
+            </v-btn>
           </div>
         </v-app-bar>
         <v-navigation-drawer
