@@ -3,10 +3,6 @@
     <v-app>
       <v-container >
         <v-app-bar app dense>
-          <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
-
-          <v-spacer></v-spacer>
-
           <v-toolbar-title>
             <v-btn to="/">Imagehub</v-btn>
           </v-toolbar-title>
@@ -69,6 +65,7 @@
 </template>
 <script>
   export default {
+    middleware: ['auth'],
     data: () => ({
       drawer: false,
       group: null,
