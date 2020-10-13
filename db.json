@@ -1,0 +1,112 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Post title 1",
+      "imgUrl": "https://cdn.vuetifyjs.com/images/cards/house.jpg",
+      "likes": 30
+    },
+    {
+      "id": 2,
+      "title": "Post title 2",
+      "imgUrl": "https://cdn.vuetifyjs.com/images/cards/house.jpg",
+      "likes": 12
+    },
+    {
+      "id": 3,
+      "title": "Post titlt 3",
+      "imgUrl": "https://cdn.vuetifyjs.com/images/cards/road.jpg",
+      "likes": 44
+    },
+    {
+      "id": 4,
+      "title": "Post titlt 4",
+      "imgUrl": "https://cdn.vuetifyjs.com/images/cards/house.jpg",
+      "likes": 5
+    },
+    {
+      "id": 5,
+      "title": "Post titlt 5",
+      "imgUrl": "https://cdn.vuetifyjs.com/images/cards/house.jpg",
+      "likes": 156
+    },
+    {
+      "id": 6,
+      "title": "Post titlt 6",
+      "imgUrl": "https://cdn.vuetifyjs.com/images/cards/road.jpg",
+      "likes": 6556
+    },
+    {
+      "id": 7,
+      "title": "Post titlt 7",
+      "imgUrl": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
+      "likes": 2888
+    },
+    {
+      "id": 8,
+      "title": "Post titlt 8",
+      "imgUrl": "https://cdn.vuetifyjs.com/images/cards/road.jpg",
+      "likes": 788
+    },
+    {
+      "id": 9,
+      "title": "Post titlt 9",
+      "imgUrl": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
+      "likes": 5454
+    },
+    {
+      "id": 10,
+      "title": "Post titlt 10",
+      "imgUrl": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
+      "likes": 55
+    },
+    {
+      "id": 11,
+      "title": "Post titlt 11",
+      "imgUrl": "https://cdn.vuetifyjs.com/images/cards/road.jpg",
+      "likes": 1
+    },
+    {
+      "id": 12,
+      "title": "Post titlt 12",
+      "imgUrl": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
+      "likes": 25
+    }
+  ],
+  "users": [
+    {
+      "name": "user1"
+    },
+    {
+      "name": "user2"
+    },
+    {
+      "name": "user3"
+    }
+  ],
+  "profile": {
+    "name": "Profile name from backend",
+    "sumPosts": 4,
+    "bio": "Pick any number. Multiply it by two. Now add 12 to it. Divide it by 3. Now change it to 10. That’s how many seconds you just wasted.",
+    "posts": [
+      {
+        "id": 10,
+        "title": "Post titlt 10",
+        "imgUrl": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
+        "likes": 55
+      },
+      {
+        "id": 11,
+        "title": "Post titlt 11",
+        "imgUrl": "https://cdn.vuetifyjs.com/images/cards/road.jpg",
+        "likes": 1
+      },
+      {
+        "id": 12,
+        "title": "Post titlt 12",
+        "imgUrl": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
+        "likes": 25
+      }
+    ]
+  }
+}
