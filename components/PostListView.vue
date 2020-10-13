@@ -28,11 +28,6 @@
         </v-card-actions>
       </v-card>
     </v-col>
-
-
-<!--    <v-col v-for="card in cards" :key="card.title" :cols="card.flex">-->
-
-<!--    </v-col>-->
   </v-row>
 </template>
 
