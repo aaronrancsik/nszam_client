@@ -1,6 +1,8 @@
 # nszam_client
 Nagyvállalati szoftverfejlesztés agilis módszertannal aka. AGIL
 
+## Mock back-end
+```npx json-server --watch db.json --port 9696```
 ## Build Setup
 
 ```bash
