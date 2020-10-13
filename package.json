@@ -15,6 +15,7 @@
   },
   "devDependencies": {
     "@nuxt/types": "^2.14.6",
-    "@nuxtjs/vuetify": "^1.11.2"
+    "@nuxtjs/vuetify": "^1.11.2",
+    "json-server": "^0.16.2"
   }
 }
