@@ -4,7 +4,12 @@
       <v-container >
         <v-app-bar app dense>
           <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
-          <v-toolbar-title>Imagehub</v-toolbar-title>
+          <v-toolbar-title>
+            <v-btn to="/">Imagehub</v-btn>
+          </v-toolbar-title>
+          <div v-if="$auth.loggedIn" class="profileButton">
+            <v-btn to="/profile">Profile</v-btn>
+          </div>
         </v-app-bar>
         <v-navigation-drawer
           v-model="drawer"
@@ -29,11 +34,8 @@
                 <v-list-item-icon>
                   <v-icon>mdi-login</v-icon>
                 </v-list-item-icon>
-                <v-list-item-title>Home</v-list-item-title>
+                <v-list-item-title>Login</v-list-item-title>
               </v-list-item>
-
-
-
               <v-list-item to="/profile">
                 <v-list-item-icon>
                   <v-icon>mdi-account</v-icon>
@@ -46,7 +48,7 @@
         </v-navigation-drawer>
         <v-main>
           <Nuxt />
-        </v-main>  
+        </v-main>
       </v-container>
     </v-app>
   </div>

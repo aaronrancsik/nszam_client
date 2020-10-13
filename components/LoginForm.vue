@@ -1,12 +1,13 @@
 <template>
-
   <v-card class="elevation-12">
     <v-toolbar dark color="primary" dense>
       <v-toolbar-title>Login</v-toolbar-title>
     </v-toolbar>
     <v-card-text>
       <v-form>
-        <v-btn color="success">Login</v-btn>
+        <div v-if="!$auth.loggedIn">
+          <v-btn @click="loginFB">LOGIN</v-btn>
+        </div>
       </v-form>
     </v-card-text>
   </v-card>
@@ -14,8 +15,12 @@
 
 <script>
   export default {
-    
-  }
+    methods: {
+      async loginFB(){
+        await this.$auth.loginWith('facebook')
+      },
+    }
+}
 </script>
 
 <style lang="scss" scoped>

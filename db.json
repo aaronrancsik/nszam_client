@@ -86,7 +86,7 @@
   ],
   "profile": {
     "name": "Profile name from backend",
-    "sumPosts": 4,
+    "sumPosts": 3,
     "bio": "Pick any number. Multiply it by two. Now add 12 to it. Divide it by 3. Now change it to 10. That’s how many seconds you just wasted.",
     "posts": [
       {

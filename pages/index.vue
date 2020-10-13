@@ -2,32 +2,20 @@
   <div class="container">
     <div>
       <h1 class="title">
-        nszam_client
+        ImageHub
       </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
+      <div v-if="!$auth.loggedIn" class="login">
+        <LoginForm/>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+import LoginForm from "@/components/LoginForm";
+export default {
+  components: {LoginForm}
+}
 </script>
 
 <style>
