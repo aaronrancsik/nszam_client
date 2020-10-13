@@ -11,7 +11,7 @@
       <v-btn @click="logoutFB">LOGOUT</v-btn>
     </div>
     <div>
-      <post-list-view :posts="profile"></post-list-view>
+      <post-list-view :posts="profile.posts"></post-list-view>
     </div>
   </div>
 </div>
