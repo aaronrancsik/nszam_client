@@ -1,40 +1,29 @@
 <template>
-
-  <v-card class="elevation-12">
-    <v-toolbar dark color="primary" dense>
-      <v-toolbar-title>Login</v-toolbar-title>
-    </v-toolbar>
-    <v-card-text>
-      <v-form>
-        <div v-if="!$auth.loggedIn">
-         <v-btn @click="loginFB">LOGIN</v-btn>
-        </div>
-      <div v-else>
-        {{$auth.user.email}}
-         <v-btn @click="logoutFB">LOGOUT</v-btn>
-        </div>
-      </v-form>
-    </v-card-text>
-  </v-card>
+  <v-layout row wrap align-center>
+    <v-spacer></v-spacer>
+    <v-flex>
+      <v-btn icon x-large @click="loginFB">
+        <v-icon x-large>mdi-facebook</v-icon>
+      </v-btn>
+    </v-flex>
+  </v-layout>
 </template>
 
 <script>
-
 export default {
-  components: {
-
-  },
-   methods: {
-    async loginFB(){
-      await this.$auth.loginWith('facebook')
+  components: {},
+  layout: "login",
+  methods: {
+    async loginFB() {
+      await this.$auth.loginWith("facebook");
     },
-    async logoutFB(){
-      await this.$auth.logout('facebook')
-    }
-   }
-}
+    async logoutFB() {
+      await this.$auth.logout("facebook");
+    },
+  },
+};
 </script>
 
-<style lang="scss" scoped>
 
+<style scoped>
 </style>

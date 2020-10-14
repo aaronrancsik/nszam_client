@@ -32,7 +32,7 @@ export default {
   ],
 
   vuetify:{
-
+    theme: { dark: true },
   },
 
   // Modules (https://go.nuxtjs.dev/config-modules)
@@ -54,7 +54,7 @@ export default {
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {
-    baseURL: "http://localhost:9696"
+    baseURL: "http://localhost:5000/api"
   },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)

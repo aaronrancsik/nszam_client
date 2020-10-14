@@ -1,20 +1,14 @@
 <template>
   <div>
     <v-row>
-      <v-col>
+      <v-col md="6">
         <h1>{{ $auth.user.name }}</h1>
-        <h3>{{ profile.posts.length }} posts - 4 followers</h3>
-      </v-col>
-      <v-col> </v-col>
-      <v-col>
-        <div>
-          <v-btn @click="logoutFB">LOGOUT</v-btn>
-        </div>
+        <h3>{{ profile.images.length }} posts - 4 followers</h3>
       </v-col>
     </v-row>
     <h4>{{ profile.bio }}</h4>
     <div>
-      <post-list-view :posts="profile.posts"></post-list-view>
+      <post-list-view :images="profile.images"></post-list-view>
     </div>
   </div>
 </template>
@@ -24,11 +18,6 @@ export default {
   async asyncData({ $axios }) {
     const { data } = await $axios.get(`/profile`);
     return { profile: data };
-  },
-  methods: {
-    async logoutFB() {
-      await this.$auth.logout("facebook");
-    },
   },
 };
 </script>
