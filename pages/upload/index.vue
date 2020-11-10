@@ -10,11 +10,15 @@
     </form>
     <v-snackbar color="success" v-model="snackbar" timeout="2000">
       <div>Upload finished sucessfully</div>
-      <v-btn text @click="snackbar = false"> Close </v-btn>
+      <template v-slot:action="{ attrs }">
+        <v-btn v-bind="attrs" icon @click="snackbar = false"><v-icon>mdi-close</v-icon></v-btn>
+      </template>
     </v-snackbar>
     <v-snackbar color="error" v-model="snackbar2" timeout="2000">
       <div>Upload failed</div>
-      <v-btn text @click="snackbar2 = false"> Close </v-btn>
+      <template v-slot:action="{ attrs }">
+        <v-btn v-bind="attrs" icon @click="snackbar2 = false"><v-icon>mdi-close</v-icon></v-btn>
+      </template>
     </v-snackbar>
   </div>
 </template>
@@ -23,7 +27,7 @@
 export default {
   methods: {
     dis() {
-      return this.img == null;
+      return this.img == null;0
     },
     upload() {
       if (this.img) {
@@ -41,12 +45,11 @@ export default {
           })
           .then((result) => {
             this.snackbar = true;
-            this.img = null
+            this.img = null;
           })
           .catch((err) => {
             this.snackbar2 = true;
             console.log(err);
-
           });
       };
       reader.readAsDataURL(fileObject);
