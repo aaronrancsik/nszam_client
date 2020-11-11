@@ -6,6 +6,7 @@
 export default {
   async asyncData({ $axios }) {
     const { data } = await $axios.get(`/images`);
+    console.log(data)
     return { images: data };
   }
 };

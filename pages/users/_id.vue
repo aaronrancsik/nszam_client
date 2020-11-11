@@ -14,13 +14,13 @@
         </div>
 
     </v-row >
-     <div>
-         {{ "user.images.length" }} posts
-         -
-          <v-btn to="/friends" color="rgba(0,0,0,0.1)">
-            {{"user.friends.length"}}
-          </v-btn>
-       </div>
+<!--     <div>-->
+<!--         {{ "user.images.length" }} posts-->
+<!--         - -->
+<!--          <v-btn to="/friends" color="rgba(0,0,0,0.1)">-->
+<!--            {{"user.friends.length"}}-->
+<!--          </v-btn>-->
+<!--       </div>-->
 
 <!--    <h4>{{ user.bio }}</h4>-->
 <!--    <div>-->
@@ -33,8 +33,8 @@
 
 <script>
 export default {
-  async asyncData({ $axios }) {
-    const { data } = await $axios.get(`/users/2`);
+  async asyncData({ $axios, params }) {
+    const { data } = await $axios.get(`/users/`+ params.id  );
     console.log({data});
     return { user: data };
   },

@@ -54,7 +54,8 @@ export default {
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {
-    baseURL: "http://localhost:5000/api"
+    //https://imagewebappcloud.azurewebsites.net/api
+    baseURL: "https://localhost:5001/api"
   },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)

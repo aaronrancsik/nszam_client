@@ -14,8 +14,8 @@
       <v-card sm="6" color="rgba(0,0,0,0.2)">
         <v-card-title primary-title>
 
-            <li :key="user.id">
-              <NuxtLink :to="`/users/${user.id}`">
+            <li :key="user.userId">
+              <NuxtLink :to="`/users/${user.userId}`">
                 {{ user.name }}
               </NuxtLink>
             </li>
