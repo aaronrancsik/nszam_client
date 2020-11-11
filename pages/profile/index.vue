@@ -3,7 +3,13 @@
     <v-row>
       <v-col md="6">
         <h1>{{ $auth.user.name }}</h1>
-        <h3>{{ profile.images.length }} posts - 4 followers</h3>
+               <h3>
+                 {{ profile.images.length }} posts
+                 -
+                  <v-btn to="/friends" color="rgba(0,0,0,0.2)">
+                    {{"profile.friends.length"}}
+                  </v-btn>
+               </h3>
       </v-col>
     </v-row>
     <h4>{{ profile.bio }}</h4>
@@ -17,6 +23,7 @@
 export default {
   async asyncData({ $axios }) {
     const { data } = await $axios.get(`/profile`);
+    console.log(data)
     return { profile: data };
   },
 };

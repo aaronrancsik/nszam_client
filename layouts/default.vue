@@ -19,7 +19,7 @@
           <v-spacer></v-spacer>
 
           <div v-if="$auth.loggedIn">
-            <v-btn icon to="/searchUser">
+            <v-btn icon to="/users">
               <v-icon>mdi-magnify</v-icon>
             </v-btn>
           </div>
