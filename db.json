@@ -4,89 +4,104 @@
       "id": 1,
       "title": "Post title 1",
       "imgUrl": "https://cdn.vuetifyjs.com/images/cards/house.jpg",
-      "likes": 30
+      "likes": 30,
+      "owner": "feri"
     },
     {
       "id": 2,
       "title": "Post title 2",
       "imgUrl": "https://cdn.vuetifyjs.com/images/cards/house.jpg",
-      "likes": 12
+      "likes": 12,
+      "owner": "feri"
     },
     {
       "id": 3,
       "title": "Post titlt 3",
       "imgUrl": "https://cdn.vuetifyjs.com/images/cards/road.jpg",
-      "likes": 44
+      "likes": 44,
+      "owner": "feri"
     },
     {
       "id": 4,
       "title": "Post titlt 4",
       "imgUrl": "https://cdn.vuetifyjs.com/images/cards/house.jpg",
-      "likes": 5
+      "likes": 5,
+      "owner": "feri"
     },
     {
       "id": 5,
       "title": "Post titlt 5",
       "imgUrl": "https://cdn.vuetifyjs.com/images/cards/house.jpg",
-      "likes": 156
+      "likes": 156,
+      "owner": "feri"
     },
     {
       "id": 6,
       "title": "Post titlt 6",
       "imgUrl": "https://cdn.vuetifyjs.com/images/cards/road.jpg",
-      "likes": 6556
+      "likes": 6556,
+      "owner": "feri"
     },
     {
       "id": 7,
       "title": "Post titlt 7",
       "imgUrl": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-      "likes": 2888
+      "likes": 2888,
+      "owner": "feri"
     },
     {
       "id": 8,
       "title": "Post titlt 8",
       "imgUrl": "https://cdn.vuetifyjs.com/images/cards/road.jpg",
-      "likes": 788
+      "likes": 788,
+      "owner": "feri"
     },
     {
       "id": 9,
       "title": "Post titlt 9",
       "imgUrl": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-      "likes": 5454
+      "likes": 5454,
+      "owner": "feri"
     },
     {
       "id": 10,
       "title": "Post titlt 10",
       "imgUrl": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-      "likes": 55
+      "likes": 55,
+      "owner": "feri"
     },
     {
       "id": 11,
       "title": "Post titlt 11",
       "imgUrl": "https://cdn.vuetifyjs.com/images/cards/road.jpg",
-      "likes": 1
+      "likes": 1,
+      "owner": "feri"
     },
     {
       "id": 12,
       "title": "Post titlt 12",
       "imgUrl": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-      "likes": 25
+      "likes": 25,
+      "owner": "feri"
     }
   ],
   "users": [
     {
-      "name": "user1"
+      "name": "user1",
+      "bio": "Pick any number. Multiply it by two. Now add 12 to it. Divide it by 3. Now change it to 10. That’s how many seconds you just wasted."
     },
     {
-      "name": "user2"
+      "name": "user2",
+      "bio": "Pick any number. Multiply it by two. Now add 12 to it. Divide it by 3. Now change it to 10. That’s how many seconds you just wasted."
     },
     {
-      "name": "user3"
+      "name": "user3",
+      "bio": "Pick any number. Multiply it by two. Now add 12 to it. Divide it by 3. Now change it to 10. That’s how many seconds you just wasted."
     }
   ],
   "profile": {
+    "id": 6,
     "name": "Profile name from backend",
-    "sumPosts": 3,
     "bio": "Pick any number. Multiply it by two. Now add 12 to it. Divide it by 3. Now change it to 10. That’s how many seconds you just wasted.",
     "posts": [
       {
@@ -107,6 +122,21 @@
         "imgUrl": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
         "likes": 25
       }
-    ]
+    ],
+        "friends":
+          [
+            {
+              "id": 1,
+              "name": "Kamus Kami"
+            },
+            {
+              "id": 2,
+              "name": "Merész Tehén"
+            },
+            {
+              "id": 3,
+              "name": "Rogán Ceci"
+            }
+          ]
   }
 }

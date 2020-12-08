@@ -2,13 +2,25 @@
   <div>
     <v-row>
       <v-col md="6">
-        <h1>{{ $auth.user.name }}</h1>
-        <h3>{{ profile.images.length }} posts - 4 followers</h3>
+<!--        <h1>{{ $auth.user.name }}</h1>-->
+        <h1>{{ profile.name }}</h1>
+        <h3>{{ profile.posts.length }} posts
+          -
+
+<!--            <v-btn to="/friends/{{profile.id}}" :profile="profile" color="rgba(0,0,0,0.2)">-->
+<!--              {{profile.friends.length}} friends-->
+<!--            </v-btn>-->
+
+            <v-btn color="rgba(0,0,0,0.2)">
+              <nuxt-link :to="{ path: 'friends', query: {profile: {profile}}}">{{profile.friends.length}} friends</nuxt-link>
+            </v-btn>
+
+        </h3>
       </v-col>
     </v-row>
     <h4>{{ profile.bio }}</h4>
     <div>
-      <post-list-view :images="profile.images"></post-list-view>
+      <post-list-view :images="profile.posts"></post-list-view>
     </div>
   </div>
 </template>
@@ -23,19 +35,5 @@ export default {
 </script>
 
 <style scoped>
-/*.container {*/
-/*  !*margin: 0 auto;*!*/
-/*  !*min-height: 100vh;*!*/
-/*  !*display: flex;*!*/
-/*  justify-content: center;*/
-/*  align-items: center;*/
-/*  text-align: center;*/
-/*}*/
-/*.userInfo {*/
-/*  !*flex-direction: column;*!*/
-/*}*/
-/*.row {*/
-/*  display: flex;*/
-/*  flex-direction: row;*/
-/*}*/
+
 </style>

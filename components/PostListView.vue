@@ -11,14 +11,16 @@
     >
       <v-card class="ma-5" elevation="24">
         <v-img
-          :src="image.content"
+          :src="image.imgUrl"
           class="white--text align-end"
           gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
           height="200px"
         >
           <v-card-text>
             <v-icon color="white">mdi-at</v-icon>
-            <span v-text="image.owner"></span>
+            <div v-if="image.owner">
+                <span v-text="image.owner"></span>
+            </div>
           </v-card-text>
         </v-img>
       </v-card>
