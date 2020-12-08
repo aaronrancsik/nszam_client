@@ -5,7 +5,9 @@
       <v-container>
         <v-app-bar app dense>
           <v-toolbar-title>
-            <v-btn to="/">Imagehub</v-btn>
+            <v-btn to="/">
+              Imagehub  <v-icon>mdi-camera</v-icon>
+            </v-btn>
           </v-toolbar-title>
 
           <v-spacer></v-spacer>
@@ -19,7 +21,7 @@
           <v-spacer></v-spacer>
 
           <div v-if="$auth.loggedIn">
-            <v-btn icon to="/searchUser">
+            <v-btn icon to="/users">
               <v-icon>mdi-magnify</v-icon>
             </v-btn>
           </div>

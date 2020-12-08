@@ -16,12 +16,24 @@
           gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
           height="200px"
         >
+          <v-row>
+          <div v-if="image.owner">
           <v-card-text>
             <v-icon color="white">mdi-at</v-icon>
             <div v-if="image.owner">
                 <span v-text="image.owner"></span>
             </div>
           </v-card-text>
+          </div>
+
+          <div v-if="image.likes">
+            <v-card-text>
+            <v-icon color="white">mdi-heart</v-icon>
+                <span v-text="image.likes"></span>
+          </v-card-text>
+          </div>
+         </v-row>
+
         </v-img>
       </v-card>
     </v-col>
