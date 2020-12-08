@@ -34,7 +34,7 @@ import Requests from "~/components/Request";
 export default {
   name: "friends",
   mounted() {
-    console.log("profile: ",this.$route.query.profile);
+    console.log("profile: ",JSON.parse(this.$route.query.profile));
     // return { friends: this.$route.query.profile.friends };
   },
   data() {

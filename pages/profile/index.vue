@@ -12,7 +12,7 @@
 <!--            </v-btn>-->
 
             <v-btn color="rgba(0,0,0,0.2)">
-              <nuxt-link :to="{ path: 'friends', query: {profile: {profile}}}">{{profile.friends.length}} friends</nuxt-link>
+              <nuxt-link :to="{ path: 'friends', query: {profile: JSON.stringify(profile)}}">{{profile.friends.length}} friends</nuxt-link>
             </v-btn>
 
         </h3>
