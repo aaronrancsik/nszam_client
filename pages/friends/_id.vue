@@ -1,11 +1,9 @@
 <template>
   <div>
     <v-row>
-      <h1>{{ user.name }}</h1>
+      <h1>{{ user.userId }}</h1>
 
       <v-spacer></v-spacer>
-
-      <!--TODO button title: friend request status-->
 
       <div v-if="/*!this.user.friends.contains({id: this.user.id}) */ true">
         <v-btn @click="addFriend()" color="rgba(0,0,0,0.2)">

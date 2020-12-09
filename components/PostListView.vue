@@ -11,25 +11,27 @@
     >
       <v-card class="ma-5" elevation="24">
         <v-img
-          :src="image.imgUrl"
+          :src="image.content"
           class="white--text align-end"
           gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
           height="200px"
         >
           <v-row>
-          <div v-if="image.owner">
+          <div v-if="image.authorId">
           <v-card-text>
             <v-icon color="white">mdi-at</v-icon>
-            <div v-if="image.owner">
-                <span v-text="image.owner"></span>
+            <div v-for="u in $attrs.users.filter(x => x.userId == image.authorId)">
+              {{ u.name }}
             </div>
           </v-card-text>
           </div>
 
-          <div v-if="image.likes">
+          <div v-if="$attrs.likes">
             <v-card-text>
             <v-icon color="white">mdi-heart</v-icon>
-                <span v-text="image.likes"></span>
+                <span>
+                  {{$attrs.likes.filter(x => x.likedImageId == image.imageId).length}}
+                </span>
           </v-card-text>
           </div>
          </v-row>
@@ -39,10 +41,6 @@
     </v-col>
   </v-row>
 </template>
-
-<script>
-export default {};
-</script>
 
 <style lang="scss" scoped>
 </style>
